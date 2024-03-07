@@ -140,7 +140,22 @@ ul li:last-child a{
                                 WRAPPER 2 - 2 columns with proprities and advantages and a brief description 
 *****************************************************************************************************************************************/
 .wrapper-description {
-    height:800px;
+    height:1000px;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-description .container{
+    height: 800px;
+    padding: 20px;
+    /*debug*/
+    border: 1px solid black;
+    flex-direction: row;
+}
+.wrapper-description .container .column{
+        height: auto;
+        width: calc(100%/2);
+       /*debug*/
+       border: 1px solid black; 
 }
 /* **************************************************************************************************************************************
                                 WRAPPER 3 - A title and a list of  the partners with a brief description 
