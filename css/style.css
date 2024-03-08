@@ -1,3 +1,24 @@
+/*                                 )
+                            )      ((     (
+                           (        ))     )
+                    )       )      //     (
+               _   (        __    (     ~->>
+        ,-----' |__,_~~___<'__`)-~__--__-~->> <
+        | //  : | -__   ~__ o)____)),__ - '> >-  >
+        | //  : |- \_ \ -\_\ -\ \ \ ~\_  \ ->> - ,  >>
+        | //  : |_~_\ -\__\ \~'\ \ \, \__ . -<-  >>
+        `-----._| `  -__`-- - ~~ -- ` --~> >
+         _/___\_    //)_`//  | ||]
+   _____[_______]_[~~-_ (.L_/  ||
+  [____________________]' `\_,/'/
+    ||| /          |||  ,___,'./
+    ||| \          |||,'______|
+    ||| /          /|| I==||
+    ||| \       __/_||  __||__
+-----||-/------`-._/||-o--o---o---
+  ~~~~~'*/
+
+
 /*RESET*/
 * {
     padding: 0;
@@ -49,21 +70,21 @@ header {
 .logo{
     margin-left: 20px;
 }
-ul {
+.navbar ul {
     
     gap: 30px;
     margin-right: 30px;
     align-items: center;
     color: white;
 }
-ul li:last-child {
+.navbar ul li:last-child {
     background-color: white;
     padding: 0.5rem;
     border: 1px solid white;
     border-radius: 20px;
     color: black;
 }
-ul li:last-child a{
+.navbar ul li:last-child a{
     text-decoration: none;
     color: inherit;
 }
@@ -144,14 +165,14 @@ ul li:last-child a{
     justify-content: center;
     align-items: center;
 }
-.wrapper-description .container{
+.wrapper-description .container {
     height: 800px;
     padding: 20px;
     /*debug*/
     border: 1px solid black;
     flex-direction: row;
 }
-.wrapper-description .container .column{
+.wrapper-description .container .column {
         height: auto;
         width: calc(100%/2);
        /*debug*/
@@ -161,8 +182,34 @@ ul li:last-child a{
                                 WRAPPER 3 - A title and a list of  the partners with a brief description 
 *****************************************************************************************************************************************/
 .wrapper-partners {
-    height:800px;
+    height:1000px;
+    justify-content: center;
+    align-items: center;}
+
+.wrapper-partners .container{
+    height: 800px;
+    padding: 10px;
+    /*debug*/
+    border: 1px solid black;
+    flex-direction: column;
 }
+
+/*titolo*/
+.wrapper-partners .container .title{
+    height: 25%;
+    /*debug*/
+    border: 1px solid black;
+}
+.partners{
+    height: 75%;
+}
+.partners>li{
+    width: 100%;
+    height: calc(100%/3);
+    /*debug*/
+    border: 1px solid black;
+}
+
 /* **************************************************************************************************************************************
                                 WRAPPER 4- A title and a cards layout showcasing the different benefits
 *****************************************************************************************************************************************/
