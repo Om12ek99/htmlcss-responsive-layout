@@ -88,7 +88,22 @@ header {
     text-decoration: none;
     color: inherit;
 }
+.burgerbutton {
+    display: none;
+}
 
+/*under-992px*/
+@media  screen and (max-width: 992px) {
+    .header {
+        max-width: 100%;
+    }
+    .navbar-list {
+        display: none;
+    }
+    .burgerbutton {
+        display: block;
+    }
+}
 
 /* **************************************************************************************************************************************
                                 WRAPPER 1 - Card design with a link to the APP-STORE 
@@ -99,7 +114,7 @@ header {
     align-items: center;
 }
 .wrapper-appstore .fixedwidth {
-    height: 800px;
+    height: 80%;    
     /*debug*/
     border: 1px solid black;
     
@@ -157,6 +172,35 @@ header {
     background-color: green;
 }
 
+
+/*MEDIA SCREEN MOBILE*/
+@media  screen and (max-width: 768px) {
+    .wrapper-appstore {
+        max-width: 100%;
+        height: fit-content; 
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper-appstore  .container{
+        flex-direction: column;
+        height: fit-content;
+    
+    }
+    .wrapper-appstore .container .column {
+        flex-direction: column;
+        height: fit-content;
+        width: 90%;
+    }
+    .wrapper-appstore .container .column .row {
+        flex-direction: column;
+    }
+    .wrapper-appstore .container .column .card{
+        height: 100px;
+        width: 100%;
+    }
+}
+
+
 /* **************************************************************************************************************************************
                                 WRAPPER 2 - 2 columns with proprities and advantages and a brief description 
 *****************************************************************************************************************************************/
@@ -178,6 +222,29 @@ header {
        /*debug*/
        border: 1px solid black; 
 }
+
+/*MEDIA SCREEN MOBILE*/
+@media  screen and (max-width: 768px) {
+    .wrapper-description {
+        max-width: 100%;
+        height: fit-content; 
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper-description  .container{
+        flex-direction: column;
+        /*debug*/
+        height: 500px;
+    
+    }
+    .wrapper-description .container .column {
+        flex-direction: column;
+        /* debug */
+        height: 50%;
+        width: 90%;
+    }
+}
+
 /* **************************************************************************************************************************************
                                 WRAPPER 3 - A title and a list of  the partners with a brief description 
 *****************************************************************************************************************************************/
@@ -246,6 +313,46 @@ header {
     /*debug*/
     border: 1px solid black;
 }
+
+/*MEDIA SCREEN MOBILE*/
+@media  screen and (max-width: 768px) {
+    .wrapper-description {
+        max-width: 100%;
+        height: 1000px; 
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper-description  .container{
+        flex-direction: column;
+        /*debug*/
+        height: 800px;
+    
+    }
+    .wrapper-description .container .column {
+        flex-direction: column;
+        /* debug */
+        height: 50%;
+        width: 90%;
+    }
+    .wrapper-benefits .container .title {
+        height: 50px;
+        /*debug*/
+    }
+    .wrapper-benefits .container .cardscontainer {
+        height: fit-content
+        margin-top: 10px;
+        flex-direction: column;
+        /*debug*/
+        border: 1px solid black;
+    }
+    .wrapper-benefits .container .cardscontainer .card {
+        height: calc(100%/6);
+        width: 100%;
+        /*debug*/
+        border: 1px solid black;
+    }
+}
+
 /* **************************************************************************************************************************************
                                 WRAPPER 5 - 2 columns with a description of the company and the profile of a rapresentative 
 *****************************************************************************************************************************************/
@@ -289,6 +396,24 @@ header {
 }
 .wrapper-aboutus .container .column:last-child .text h2 {
     width: 60%;
+}
+/* Media screen */
+@media  screen and (max-width: 768px) {
+    .wrapper-aboutus {
+        max-width: 100%;
+        height: 1000px; 
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper-aboutus  .container{
+        flex-direction: row;
+        display: block;
+        /*debug*/
+        height: fit-content;    
+    }
+    .wrapper-aboutus  .container .column {
+        width: 100%;
+    }
 }
 /* **************************************************************************************************************************************
                                 WRAPPER 6 - Get Started 
