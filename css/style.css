@@ -214,13 +214,81 @@ header {
                                 WRAPPER 4- A title and a cards layout showcasing the different benefits
 *****************************************************************************************************************************************/
 .wrapper-benefits {
-    height:800px;
+    height:1200px;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-benefits .container {
+    height: 1000px;
+    padding: 10px;
+    /*debug*/
+    border: 1px solid black;
+    flex-direction: column;
+}
+/*titolo*/
+.wrapper-benefits .container .title {
+    height: calc(100%/6);
+    /*debug*/
+    border: 1px solid black;
+}
+/*contenitore delle cards*/
+.wrapper-benefits .container .cardscontainer {
+    height: calc(82%);
+    margin-top: 10px;
+    flex-wrap: wrap;
+    /*debug*/
+    border: 1px solid black;
+}
+/*proprietà delle cards*/
+.wrapper-benefits .container .cardscontainer .card {
+    height: calc(100%/2);
+    width: calc(100%/3);
+    /*debug*/
+    border: 1px solid black;
 }
 /* **************************************************************************************************************************************
                                 WRAPPER 5 - 2 columns with a description of the company and the profile of a rapresentative 
 *****************************************************************************************************************************************/
 .wrapper-aboutus {
-    height:800px;
+    height:1000px;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-aboutus .container {
+    height: 800px;
+    padding: 10px;
+    /*debug*/
+    border: 1px solid black;
+    flex-direction: row;
+}
+.wrapper-aboutus .container .column:first-child {
+    width: calc(100%/3*2);
+    height: 100%;
+}
+.wrapper-aboutus .container .column:last-child {
+    width: calc(100%/3);
+    height: 100%;
+    padding: 20px;
+}
+.wrapper-aboutus .container .column:last-child .image {
+    height: calc(100%/3);
+    position: relative;
+
+}
+/*immagine*/
+.wrapper-aboutus .container .column:last-child .image img {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    border-radius: 50%;
+}
+.wrapper-aboutus .container .column:last-child .text {
+    width: 100%;
+    margin-left: 20%;
+}
+.wrapper-aboutus .container .column:last-child .text h2 {
+    width: 60%;
 }
 /* **************************************************************************************************************************************
                                 WRAPPER 6 - Get Started 
